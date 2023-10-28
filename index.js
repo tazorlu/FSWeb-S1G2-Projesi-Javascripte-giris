@@ -19,7 +19,8 @@ Aşağıdakileri yap:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-
+const surucuYasi = 20
+console.log(surucuYasi === 18)
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
 
@@ -42,7 +43,9 @@ Aşağıdakileri yap:
 
    İPUCU: Number metoduna bakabilirsin
 */
-
+const stringTipi = "1999";
+const numberTipi = parseInt(stringTipi);
+console.log 
 /*
 Görev 1d - Çarpma
  
@@ -69,8 +72,8 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(yas) {
+return yas * 7
 }
 
 /* Görev 3 */
