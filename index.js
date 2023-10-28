@@ -52,9 +52,13 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function carpma(a, b) {
+  const sonuc = a * b;
+  return sonuc;
 }
+
+const sonuc2 = carpma(7, 6);
+console.log("işlem sonucu ", sonuc2);
 
 /* Görev 2 : Köpeğin Yaşı */
 
