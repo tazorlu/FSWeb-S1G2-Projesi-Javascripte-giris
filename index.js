@@ -109,6 +109,32 @@ function oyun(oyuncu, bilgisayar) {
 Şimdi kendi seçtiğin bir seçime karşı bilgisayarın rastgele oluşturduğu seçimi yukarıda yazdığın oyun fonsiyonu ile oynayın ve sonucu console'a yazdırın.
 Örn: console.log(oyun("Makas",bilgisayarinSecimi()))
 */
+function bilgisayarinSecimi() {
+  let bilgisayarOyna = Math.random();
+  if (bilgisayarOyna < 0.33) {
+      bilgisayarOyna = "Tas"
+  }
+  else if (bilgisayarOyna <= 0.67) {
+      bilgisayarOyna = "Kagit"
+  }
+  else{
+      bilgisayarOyna = "Makas"
+  }
+}
+
+function karsilastir(secim1, bilgisayarOyna) {
+    if (seninSecimin === "Tas" || seninSecimin === "Kagit" || seninSecimin === "Makas") {
+        if (secim1 === secim2) {
+        console.log("Durum berabere!" + " Bilgisayar: " + bilgisayarOyna)
+      } 
+        if (seninSecimin === Tas) {
+        if (bilgisayarOyna === Makas) {
+        console.log("Kazandin")}
+      }
+  }
+}
+// YAPAMADIM //
+
 
 /* Görev 4 : Metrik Dönüştürücü */
 
@@ -120,9 +146,10 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu(kilometre) {
+    return kilometre * 0.6213
 }
+
 
 //Görev 4b - Santimetreden Feet
 /*
@@ -134,8 +161,8 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(santimetre) {
+  return santimetre * 0.0328
 }
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
