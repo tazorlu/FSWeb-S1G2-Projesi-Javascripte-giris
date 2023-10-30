@@ -178,11 +178,9 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(sayi){
-  return (sayi) + " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"}
-  
-  for( let i=5; i>0; i--){
-  console.log(cocukSarkisi(i))}
+function cocukSarkisi() {
+  for(let sayi = 5; sayi > 0; sayi--) 
+  console.log(sayi + " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!")
   /* Daha farklı varyasyonlarla da yazılabiliyor*/
   /* Fonksiyon kısmını yapamadım. cocukSarkisi() yazdığımda direkt yazdığım kodları gösteriyor*/
 }
@@ -229,8 +227,9 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yap.
 İPUCU - .includes() methoduna bakabilirsin. (https://www.w3schools.com/jsref/jsref_includes.asp)
 */
 
-function sesliHarfSayaci(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function sesliHarfSayaci() {
+  const sesliHarf = ["A", "E", "I", "İ", "O", "Ö", "U", "Ü"]
+  return sesliHarf.length 
 }
 
 /* Lütfen bu satırın alt tarafını değiştirmeyin */
