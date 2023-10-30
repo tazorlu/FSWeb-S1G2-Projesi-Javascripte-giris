@@ -178,10 +178,13 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi() {
-    for(let sayi = 5; sayi > 0; sayi--) {
-      console.log(sayi + " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!")
-  }
+function cocukSarkisi(sayi){
+  return (sayi) + " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"}
+  
+  for( let i=5; i>0; i--){
+  console.log(cocukSarkisi(i))}
+  /* Daha farklı varyasyonlarla da yazılabiliyor*/
+  /* Fonksiyon kısmını yapamadım. cocukSarkisi() yazdığımda direkt yazdığım kodları gösteriyor*/
 }
 
 /* Görev 6 : Not Hesaplayıcı */
@@ -199,8 +202,20 @@ Aşağdakileri notHesapla fonksiyonunda yap.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function notHesapla(puan) {
+  if (puan > 89 && puan < 101) {
+  console.log("A aldın")
+} else if (puan > 79 && puan < 90) {
+  console.log("B aldın")
+} else if (puan > 69 && puan < 80) {
+  console.log("C aldın")
+} else if (puan > 59 && puan < 70) {
+  console.log("D aldın")
+}else if (puan < 0 ) {
+  console.log("Geçersiz değer!")
+} else {
+  console.log("F aldın")}
+
 }
 
 /* Bonus Çalışma: Sesli harf sayacı - Kaç tane sesli harf var? */
